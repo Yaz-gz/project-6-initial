@@ -31,11 +31,11 @@ public class DictionaryController {
 
         long nanoSeconds = sw.getLastTaskTimeNanos();
         String message = new StringBuilder().append("Retrieved entry for [")
-                                            .append(word)
-                                            .append("] in ")
-                                            .append(nanoSeconds / 1000000.0)
-                                            .append("ms")
-                                            .toString();
+                .append(word)
+                .append("] in ")
+                .append(nanoSeconds / 1000000.0)
+                .append("ms")
+                .toString();
         logger.info(message);
         return entry;
     }
